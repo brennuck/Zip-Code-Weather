@@ -11,7 +11,7 @@ angular.module("weather").component("weather", {
 					method: "GET",
 					url:
 						"https://us-weather-by-zip-code.p.rapidapi.com/getweatherzipcode",
-					params: { zip: "94111" },
+					params: { zip: $scope.zip },
 					headers: {
 						"x-rapidapi-key":
 							"3acd025854mshb88d4616eac0063p19e3a5jsn722c3bcc8795",

@@ -1,4 +1,11 @@
 <div>
     <input type="string" ng-model="zip" ng-submit="callWeather()" />
     <button ng-click="callWeather()">CALL API</button>
+    <div class="weatherInfo">
+        <span> {{$ctrl.warming.City}}, {{$ctrl.warming.State}} </span>
+        <span> {{$ctrl.warming.TempF}} </span>
+        <span> {{$ctrl.warming.Weather}} </span>
+        <span> {{$ctrl.warming.WindDir}} {{ctrl.warming.WindMPH}}MPH </span>
+        <span> {{$ctrl.warming.Sunrise}} {{$ctrl.warming.Sunset}} </span>
+    </div>
 </div>

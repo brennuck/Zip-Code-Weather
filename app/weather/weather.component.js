@@ -6,6 +6,8 @@ angular.module("weather").component("weather", {
 		"$http",
 		"$scope",
 		function WeatherController($http, $scope) {
+            var self = this;
+
 			$scope.callWeather = function () {
 				$http({
 					method: "GET",
@@ -19,7 +21,8 @@ angular.module("weather").component("weather", {
 							"us-weather-by-zip-code.p.rapidapi.com",
 					},
 				}).then((response) => {
-					console.log(response);
+                    console.log(response.data);
+                    self.warming = response.data;
 				});
 			};
 		},

@@ -1,7 +1,7 @@
-<div>
+<div class="weatherContainer">
     <div class="weatherInput">
         <input type="string" ng-model="zip" ng-submit="callWeather()" placeholder="Zip Code" />
-        <button ng-click="callWeather()">CALL API</button>
+        <button ng-click="callWeather()">Search</button>
     </div>
     <div class="weatherInfo">
         <span class="weatherCity"> {{$ctrl.warming.City}}, {{$ctrl.warming.State}} </span>

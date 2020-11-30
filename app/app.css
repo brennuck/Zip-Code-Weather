@@ -70,7 +70,7 @@ input {
 }
 
 .weatherInfo img {
-    text-align: left;
+    padding-right: 50px;
 }
 
 input:focus,

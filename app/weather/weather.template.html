@@ -4,10 +4,10 @@
         <button ng-click="callWeather()">Search</button>
     </div>
     <div class="weatherInfo">
-        <span class="weatherCity"> {{$ctrl.warming.City}}, {{$ctrl.warming.State}} </span>
-        <span class="weatherTemp"> {{$ctrl.warming.TempF}} </span>
-        <span class="weatherConditions"> {{$ctrl.warming.Weather}} </span>
-        <span class="weatherWind"> {{$ctrl.warming.WindDir}} {{ctrl.warming.WindMPH}}MPH </span>
-        <span class="weatherSun"> {{$ctrl.warming.Sunrise}} {{$ctrl.warming.Sunset}} </span>
+        <span class="weatherCity"> <img class="cityIcon" ng-src="{{cityIcon}}" /> {{$ctrl.warming.City}}, {{$ctrl.warming.State}} </span>
+        <span class="weatherTemp"> <img class="tempIcon" ng-src="{{tempIcon}}" /> {{$ctrl.warming.TempF}} </span>
+        <span class="weatherConditions"> <img class="conditionsIcon" ng-src="{{conditionsIcon}}" /> {{$ctrl.warming.Weather}} </span>
+        <span class="weatherWind"> <img class="windIcon" ng-src="{{windIcon}}" /> {{$ctrl.warming.WindDir}} {{$ctrl.warming.WindMPH}} MPH </span>
+        <span class="weatherSun"> <img class="timeIcon" ng-src="{{timeIcon}}" /> {{$ctrl.warming.Sunrise}} AM {{$ctrl.warming.Sunset}} PM </span>
     </div>
 </div>

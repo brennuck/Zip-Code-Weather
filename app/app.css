@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    background: #F4F6F6;
+    background: #2A2A2A;
+    font-family: "DM Sans";
 }
 
 .weatherContainer {
@@ -14,7 +15,7 @@
     height: 172px;
     width: 336px;
     border-radius: 12px;
-    background-color: #FFFFFF;
+    background-color: black;
     box-shadow: 0 5px 10px 0 rgba(57,71,77,0.05);
     margin-top: 40px;
 }
@@ -25,8 +26,7 @@ button {
     border-radius: 7px;
     background-color: #66cc79;
     border: none;
-    color: #FFFFFF;
-    font-family: "DM Sans";
+    color: black;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0;
@@ -39,15 +39,15 @@ input {
     box-sizing: border-box;
     height: 44px;
     width: 181px;
-    border: 1px solid #BEBEBE;
+    border: 1px solid #1E1E1E;
     border-radius: 8px;
-    color: #BEBEBE;
+    color: #DEDEDE;
     font-family: "DM Sans";
     font-size: 12px;
     letter-spacing: 0;
     line-height: 20px;
     padding: 0 0 0 25px;
-    background-color: #FFFFFF;
+    background-color: #1E1E1E;
     margin: 35px 78px 0 78px;
 }
 
@@ -55,7 +55,67 @@ input {
     height: 366px;
     width: 336px;
     border-radius: 12px;
-    background-color: #FFFFFF;
+    background-color: black;
     box-shadow: 0 5px 10px 0 rgba(57,71,77,0.05);
     margin-top: 38px;
+    color: #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.weatherInfo span {
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.weatherInfo img {
+    text-align: left;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.weatherCity {
+    background-color: black;
+}
+
+.cityIcon {
+    background-color: black;
+}
+
+.weatherTemp {
+    background-color: black;
+}
+
+.tempIcon {
+    background-color: black;
+}
+
+.weatherConditions {
+    background-color: black;
+}
+
+.conditionsIcon {
+    background-color: black;
+}
+
+.weatherWind {
+    background-color: black;
+}
+
+.windIcon {
+    background-color: black;
+}
+
+.weatherSun {
+    background-color: black;
+}
+
+.timeIcon {
+    background-color: black;
 }

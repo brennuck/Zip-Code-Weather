@@ -4,8 +4,9 @@ angular.module("weather").component("weather", {
 	templateUrl: "weather/weather.template.html",
 	controller: [
 		"$http",
-		"$scope",
-		function WeatherController($http, $scope) {
+        "$scope",
+        "$sce",
+		function WeatherController($http, $scope, $sce) {
             var self = this;
 
 			$scope.callWeather = function () {
@@ -24,7 +25,13 @@ angular.module("weather").component("weather", {
                     console.log(response.data);
                     self.warming = response.data;
 				});
-			};
+            };
+            
+            $scope.cityIcon = $sce.trustAsResourceUrl('../icons/icons8-city-buildings-50.png');
+            $scope.tempIcon = $sce.trustAsResourceUrl('../icons/icons8-fahrenheit-symbol-50.png');
+            $scope.conditionsIcon = $sce.trustAsResourceUrl('../icons/icons8-sun-50.png');
+            $scope.windIcon = $sce.trustAsResourceUrl('../icons/icons8-wind-50.png');
+            $scope.timeIcon = $sce.trustAsResourceUrl('../icons/icons8-day-and-night-50.png');
 		},
 	],
 });

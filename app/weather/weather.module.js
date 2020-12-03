@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('weather', []);
+angular.module('weather', ['ngRoute']);

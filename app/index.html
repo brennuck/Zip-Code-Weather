@@ -12,16 +12,17 @@
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <!-- <script src="core/core.module.js"></script>
-  <script src="core/weather/weather.module.js"></script>
-  <script src="core/weather/weather.service.js"></script> -->
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
   <script src="weather/weather.module.js"></script>
   <script src="weather/weather.component.js"></script>
 </head>
 <body>
     
-    <weather></weather>
+    <!-- <weather></weather> -->
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
+    </div>
 
 </body>
 </html>
